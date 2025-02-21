@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Update...</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Initializing system update...</h1>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector("h1").textContent = "Checking system integrity...";
+        }, 1000);
+
+        setTimeout(() => {
+            document.querySelector("h1").textContent = "Scanning files...";
+        }, 3000);
+
+        setTimeout(() => {
+            document.querySelector("h1").textContent = "Error: Corrupt files found!";
+        }, 5000);
+
+        setTimeout(() => {
+            document.querySelector("h1").textContent = "Attempting to fix errors...";
+        }, 7000);
+
+        setTimeout(() => {
+            document.querySelector("h1").textContent = "Reverting to previous state...";
+        }, 9000);
+
+        setTimeout(() => {
+            document.querySelector("h1").textContent = "LOL, you've been Rickrolled!";
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }, 12000);
+    </script>
+</body>
+</html>
